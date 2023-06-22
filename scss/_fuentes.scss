@@ -1,0 +1,74 @@
+/*VARIABLES TIPOGRAFIA POPPINS*/
+$black: "poppins-black";
+$back-italic: "poppins-blackitalic";
+$bold: "poppins-bold";
+$light: "poppins-light";
+$extra-light:"poppins-extra-light";
+$extra-light-italic: "poppins-extra-light-italic";
+$light: "poppins-light";
+$medium:"poppins-medium";
+$regular: "poppins-regular";
+
+/*VARIABLES TAMAÑOS TIPOGRAFIA*/
+$large: 2.5rem;
+$medium: 2rem;
+$standar: 1rem;
+$small: 0.5rem;
+$extra-small: 0.25rem;
+
+$titulo-parallax-size: clamp(25px, 3vw, 150px);
+$font-size-text: clamp(12px, 2vw, 18px);
+$font-size-text-xs: clamp(10px, 2vw, 15px);
+
+@font-face {
+    font-family: "poppins-black";
+    src: url(../recursos/fonts/Poppins-Black.ttf);
+}
+@font-face {
+    font-family: "poppins-blackitalic";
+    src: url(../recursos/fonts/Poppins-BlackItalic.ttf);
+}
+@font-face {
+    font-family: "poppins-bold";
+    src: url(../recursos/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: "poppins-bold-italic";
+    src: url(../recursos/fonts/Poppins-BoldItalic.ttf);
+}
+@font-face {
+    font-family: "poppins-extra-bold";
+    src: url(../recursos/fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family: "poppins-extra-bold-italic";
+    src: url(../recursos/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+@font-face {
+    font-family: "poppins-extra-light";
+    src: url(../recursos/fonts/Poppins-ExtraLight.ttf);
+}
+@font-face {
+    font-family: "poppins-extra-light-italic";
+    src: url(../recursos/fonts/Poppins-ExtraLightItalic.ttf);
+}
+@font-face {
+    font-family: "poppins-italic";
+    src: url(../recursos/fonts/Poppins-Italic.ttf);
+}
+@font-face {
+    font-family: "poppins-light";
+    src: url(../recursos/fonts/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: "poppins-light-italic";
+    src: url(../recursos/fonts/Poppins-LightItalic.ttf);
+}
+@font-face {
+    font-family: "poppins-medium";
+    src: url(../recursos/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: "poppins-regular";
+    src: url(../recursos/fonts/Poppins-Regular.ttf);
+}

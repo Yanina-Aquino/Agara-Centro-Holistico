@@ -1,0 +1,367 @@
+/*Card horizontal*/
+/*Estilos card*/
+.margen-nosotrosindex{
+    padding: 1rem;
+    border: 2rem;
+}
+
+/*Efectos imagenes*/
+.image-index-nosotros{
+    padding: 36px;
+    border-radius: 0.5%;
+    box-shadow: 10px black;
+    max-height: 600px;
+}
+.image-index-nosotros:hover {
+    filter: grayscale(80%);
+}
+.contenedor-nosotros-img:hover .image-index-nosotros {
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+.contenedor-nosotros-img {
+    overflow:hidden;
+}
+
+/*Carrousel*/
+.tamaño-imagen-carrousel{
+    object-fit: cover;
+    object-position: bottom;
+
+}
+.tipografia-carrousel{
+    font-size: 2rem;
+    color: rgb(254, 254, 254);
+    font-family: "poppins-regular";
+}
+
+.tipografia-carrousel-texto{
+    font-size: 1.3rem;
+    color: white;
+    font-family: "poppins-light", sans-serif;
+    
+}
+
+/*Frase Index*/
+.color-gris{
+    background-color: $gris-claro;
+
+}
+.color-gris h2{
+    font-family: $extra-light-italic;
+    padding: 2rem;
+    border: 2rem;
+    max-width: 800px;
+    text-align: center;
+}
+.frase-index{
+    align-items: center;
+    display: flex;
+    height: 150px;
+    justify-content: center;
+}
+
+/*Nuestros profesores*/
+/*Profesores*/
+.contenedor:hover h2{
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+    color: green;
+}
+.contenedor a{
+    text-decoration: none;
+}
+.contenedor h2{
+    font-family: $light;
+    color: $verde-logo;
+}
+.seccion-color-profesores{
+    background-color:  rgb(251, 248, 248);
+    color: #353936;
+}
+.nuestros-profesores{
+    height: 125px;
+
+}
+.nuestros-profesores .contenedor{
+    max-width: 600px;
+    text-align: center;
+}
+.seccion-clara{
+    background-color: white;
+    color: #353936;
+}
+.profesores{
+    padding-top: 0.5rem;
+    padding-bottom: 80px;
+    border: 50px;
+}
+.profesores .columna{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+    border-radius: 1%;
+}
+.profesores .columna:hover{
+    color: green;
+    background-color: $gris-claro;
+
+}
+.profesores-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.texto-profesores{
+    text-align: center;
+    font-family: "poppins-light";
+    font-size: 0.8rem;
+}
+.profesores-circular{
+    padding: 8px 8px;
+    border-radius: 50%;
+    width: 300px;
+}
+
+/*Redes sociales*/
+
+.proyectos-recientes{
+    padding: 40px;
+}
+
+.proyectos-recientes img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+    object-fit: cover;
+}
+.proyectos-contenedor{
+    padding-top: 12px;
+    margin-bottom: 40px;
+}
+
+.seccion-descripcion{
+    color:#3dac6d;
+    text-align: center;
+}
+
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.proyecto{
+    position: relative;
+}
+.proyecto:hover img{
+    opacity: 0.2;
+}
+
+.proyecto:hover .overlay{
+    opacity: 1;
+}
+
+.overlay .iconos-contenedor{
+    display: flex;
+}
+
+.overlay i{
+    color: black;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.icono-boton{
+    font-size: 12px;
+}
+
+/*Testimonios*/
+
+/* Testimonios */
+.testimonios {
+padding: 40px 40px 80px 40px;
+}
+.testimonios .carousel {
+max-width: 800px;
+}
+.carousel-item {
+max-height: 500px;
+}
+.carousel-item .container {
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.testimonio-imagen {
+height: 150px;
+width: 150px;
+margin: 10px 10px 20px 10px;
+}
+.testimonio-texto {
+max-width: 70%;
+text-align: center;
+font-family: "poppins-light";
+}
+.testimonio-info {
+font-weight: bold;
+text-align: center;
+}
+.testimonio-info p {
+margin-bottom: 0;
+}
+.testimonio-footer .cliente {
+font-family: "poppins-extra-light";
+}
+.testimonio-info .cargo {
+color: #656060;
+font-family: "poppins-extra-light";
+}
+
+/*Contacto*/
+
+/*Contacto*/ 
+.seccion-color-contacto{
+    background-color: $gris-claro;
+}
+.contacto .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+    }
+
+.contacto .rectangulo{
+        margin-top: -5rem;
+        background-color:$gris-claro;
+        border-radius: 10px;
+        box-shadow: 0px 1px 4px 1px white;
+    }
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.contacto .descripcion{
+    color: #353936;
+}
+.contacto .button-contacto{
+    color: green;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid green;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto .button-contacto:hover{
+    background-color: green;
+    color: white;
+    border: white;
+}
+.contacto .button-contacto:hover .icon-contacto{
+    color: white;
+}
+
+.icon-contacto{
+    color: green;
+    transition: all 0.2s ease-in-out;
+}
+
+
+//Responsive//
+
+// Seccion Index
+
+@media (max-width: 400px) {
+    .carousel.pointer-event {
+        padding-top: 78px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+    .d-none{
+        display: none; //Ocultar contenido del carousel en tamaño pequeño
+    }
+}
+
+// seccion index
+/*Seccion proyectos*/
+@media screen and (max-width: 479px) {
+    .overlay p{
+        font-size: 18px;
+    }
+    .overlay i{
+        font-size: 40px;
+    }
+}
+
+/*Seccion testimonios*/
+@media screen and (max-width: 479px){
+    .testimonio-imagen {
+        height: 120px;
+        width: 120px;
+        }
+        .testimonio-texto {
+        font-size: 15px;
+        font-weight: bold;
+        }
+}
+
+
+/*Seccion Maestras*/
+@media (min-width: 40rem) {
+    .cards_item {
+    width: 50%;
+    }
+}
+
+@media (min-width: 56rem) {
+    .cards_item {
+    width: 33.3333%;
+    }
+}
+
+
+//Profesores
+@media screen and (max-width: 479px) {
+    .profesores-circular {
+        width: 200px;
+    }
+    .nuestros-profesores {
+        height: 90px;
+    }
+    .profesores {
+        padding-bottom: 0%;
+    }
+    .columna {
+        padding-bottom: 23px;
+    }
+}
+
+//Blog
+@media screen and (max-width: 479px) {
+    .contenedor-blog {
+        padding: 10px;
+    }
+}
+

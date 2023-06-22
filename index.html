@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Metadatos para adatparlo a los tamaños de dispositivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Metadatos para posicionar la pagina-->
+    <meta name="author" content="Yanina Aquino">
+    <meta name="description" content="Pagina de Yoga - Espacio holistico"> 
+    <meta name="keywords" content="meditacion, yoga, relajacion, clases de yoga">
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!--Botstrap ICON-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--Animaciones ANIMATE CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!--Animacion Scroll-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./recursos/logo/Logo-Agara.png" type="image/x-icon">
+    <!--Titulo de la pagina-->
+    <title>Agara | Home</title>
+</head>
+
+<body>
+    <!--Barra de navegacion-->
+    <nav class="fixed-top navbar navbar-expand-md navbar-light">
+        <!--container fluid que se ajusta al 100% del ancho-->
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+            <!--Logo de la pagina-->    
+            <a class="navbar-brand" href="#">
+                <img src="./recursos/logo/Logo Agara-horizontal.png" width="150" alt="imagen del logo de la web">
+            </a>
+            <!--Elementos de la barra: links-->
+            <!--Agrego clases para centrar el contenido: d-flex justify-content-center align-items-center-->
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="./paginas/nosotros.html">Sobre Agara</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./paginas/clases.html">Clases de Yoga</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./paginas/blog.html"">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./paginas/contactanos.html">Contactanos</a>
+                </li>
+        </div>
+    </div>
+    </nav>    
+
+
+    <!--Carrousel de imagenes y texto-->
+    <div id="carouselindex" class="carousel carousel-white slide" data-bs-ride="carousel">
+        <div class="carousel-indicators active">
+            <button type="button" data-bs-target="#carouselindex" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselindex" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./recursos/imagenes/Index/portada/1.JPG" class="d-block w-100 tamaño-imagen-carrousel img-fluid" alt="imagen del carrrousel">
+                <div class="carousel-caption d-none d-md-block ">
+                    <h5 class="tipografia-carrousel">CONECTA</h5>
+                    <p class="tipografia-carrousel-texto">Cuerpo, mente y espíritu</p>
+                </div>
+            </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="./recursos/imagenes/Index/portada/2.JPG" class="d-block w-100 tamaño-imagen-carrousel img-fluid" alt="imagen del carrrousel">
+            <div class="carousel-caption d-none d-md-block">
+                <h5 class="tipografia-carrousel">EXPLORA</h5>
+                <p class="tipografia-carrousel-texto">Nuevos caminos de bienestar y armonía</p>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselindex" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselindex" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    </div>
+
+
+
+    <!--Conoce nuestra historia-->  
+    <div class="margen-nosotrosindex" data-aos="fade-up" data-aos="zoom-in">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-7 col-sm-12 d-flex flex-column align-items-center justify-content-center">
+                    <h2 class="seccion-titulo font-size-titulo">Conoce nuestra historia</h2>
+                    <p class="seccion-texto font-size-texto">Soy profesora de yoga y experta en bienestar. El yoga entró en mi vida por casualidad hace 20 años y enseñar esta disciplina se ha convertido en mi pasión y vocación. Mi objetivo es llevar el yoga al mayor número de personas posible para que haya más amor dentro de cada uno y armonía entre todos.</p>
+                </div>
+                <div class="contenedor-nosotros-img col-md-5 col-sm-12 d-flex flex-column">
+                    <a href="./paginas/nosotros.html">
+                        <img src="./recursos/imagenes/Index/Nuestra historia.jpg" class="img-fluid image-index-nosotros" alt="esta es una imagen de nuestra historia">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Frase Index-->
+    <section class="frase-index color-gris">
+            <h2 class="seccion-titulo font-size-titulo" data-aos="fade-up" data-aos="zoom-out">"El yoga es una disciplina pero también una actitud y una filosofía de vida".</h2>
+    </section>
+
+
+    <!--Seccion Profesores-->
+    <section class="nuestros-profesores" data-aos="fade-up"
+    data-aos-anchor-placement="top-center">
+        <div class="contenedor">
+            <a href="./paginas/clases.html">
+                <h2 class="font-size-titulo-g">Nuestras maestras</h2>
+            </a>
+        </div>
+    </section>
+    <section class="profesores seccion-clara" data-aos="fade-up"
+    data-aos-anchor-placement="top-center">
+        <div class="container text-center">
+            <div class="row">
+                <!--Profesora 1-->
+                <div class="columna col-12 col-md-4">
+                    <div>
+                        <img class="profesores-circular" src="./recursos/imagenes/Profesores/Sofia.jpg" alt="imagen profesora Sofia Galerti">
+                    </div>
+                    <p class="profesores-titulo font-size-titulo">Sofia Galerti</p>
+                    <p class="texto-profesores font-size-texto">
+                        Se recibió en instituto de Yoga de “Hari Om International - Escuela de Yoga y Ayurveda” y es co-fundadora de Agara.
+                    </p>
+                    <div class="boton-ver-mas">
+                        <a class="btn" href="./paginas/clases.html#Sofia" role="button">Leer más</a>
+                    </div>
+                </div>
+
+                <!--Profesora 2-->
+                <div class="columna col-12 col-md-4">
+                    <div>
+                        <img class="profesores-circular" src="./recursos/imagenes/Profesores/Coti.jpg" alt="imagen de la profesora Constanza Albarracin">
+                    </div>
+                    <p class="profesores-titulo font-size-titulo">Constanza Albarracin</p>
+                    <p class="texto-profesores font-size-texto">
+                        Se recibió en instituto de Yoga de “Hatha Yoga en Escuela Flor de Vida” y es co-fundadora de Agara.
+
+                    </p>
+                    <div class="boton-ver-mas">
+                        <a class="btn" href="./paginas/clases.html#Constanza" role="button">Leer más</a>
+                    </div>
+
+                </div>
+                <!--Profesora 3-->
+                <div class="columna col-12 col-md-4">
+                    <div>
+                        <img class=" profesores-circular" src="./recursos/imagenes/Profesores/Marian.jpg" alt="Imagen de la profesora Mariana">
+                    </div>
+                    <p class="profesores-titulo font-size-titulo">Mariana </p>
+                    <p class="texto-profesores font-size-texto">
+                        Se recibió de Licenciada en Kinesiologia y Fisiatria (UBA) especializada en reeducación postural global, y disfunciones craneo-mandibular y es co-fundadora de Agara. 
+                    </p>
+                    <div class="boton-ver-mas">
+                        <a class="btn" href="./paginas/clases.html#Mariana" role="button">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Nuestro instagram-->
+    <section class="proyectos-recientes seccion-color-profesores d-flex flex-column contenedor">
+        <h2 class="font-size-titulo-g">Nuestro instagram</h2>
+        <!--Galeria de instagram-->
+        <div class="container text-center proyectos-contenedor">
+            <div class="row">
+                <!--Proyecto 1-->   
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./recursos/imagenes/Index/Redessociales/1.png" alt="imagen portada instagram">
+                        <div class="overlay"> 
+                            <div class="iconos-contenedor">
+                                <a href="https://www.instagram.com/agara.yogui/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Proyecto 2-->   
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./recursos/imagenes/Index/Redessociales/2.png" alt="imagen portada instagram">
+                        <div class="overlay"> 
+                            <div class="iconos-contenedor">
+                                <a href="https://www.instagram.com/agara.yogui/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Proyecto 3-->   
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./recursos/imagenes/Index/Redessociales/3.png" alt="imagen portada instagram">
+                        <div class="overlay"> 
+                            <div class="iconos-contenedor">
+                                <a href="https://www.instagram.com/agara.yogui/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Proyecto 4-->   
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./recursos/imagenes/Index/Redessociales/4.png" alt="imagen portada instagram">
+                        <div class="overlay"> 
+                            <div class="iconos-contenedor">
+                                <a href="https://www.instagram.com/agara.yogui/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>                        
+                <!--Proyecto 5-->   
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./recursos/imagenes/Index/Redessociales/5.png" alt="imagen portada instagram">
+                        <div class="overlay"> 
+                            <div class="iconos-contenedor">
+                                <a href="https://www.instagram.com/agara.yogui/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <!--Proyecto 6-->   
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="proyecto">
+                        <img src="./recursos/imagenes/Index/Redessociales/6.png" alt="imagen portada instagram">
+                        <div class="overlay"> 
+                            <div class="iconos-contenedor">
+                                <a href="https://www.instagram.com/agara.yogui/" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>                    
+            </div>
+        </div>
+        <div class="boton-ver-mas">
+            <a class="btn" href="https://www.instagram.com/agara.yogui/" target="_blank" role="button">
+                Ver más
+                <i class="bi bi-arrow-right icono-boton"></i>
+            </a>
+        </div>    
+    </section>
+
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonios seccion-clara">
+        <h2 class="seccion-titulo font-size-titulo">Testimonios</h2>
+        <h3 class="seccion-descripcion font-size-texto">Estos son algunos testimonios de nuestros alumnos...</h3>
+        
+        <!-- Carrusel -->
+        <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                <img class="testimonio-imagen rounded-circle" src="./recursos/imagenes/Testimonios/ejemplo usuario.jpg" alt="Foto de Carla">
+                <p class="testimonio-texto font-size-texto">“Llevo 6 meses practicando yoga con Sofi y la experiencia es muy gratificante. Después de meses de práctica me noto más relajado, más flexible y me tomo la vida de una manera más pausada. Sofi como profesora es estupenda y sus clases son muy amenas. Me siento muy bien.”</p>
+                <div class="testimonio-info">
+                    <p class="cliente font-size-texto">Carla</p>
+                    <p class="cargo font-size-texto">Alumna de Agara</p>
+                </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                <img class="testimonio-imagen rounded-circle" src="./recursos/imagenes/Testimonios/ejemplo usuario 2.jpg" alt="Foto de Matias">
+                <p class="testimonio-texto font-size-texto">“Llevo dos semanas en yoga con Coti, y la verdad que estoy muy contenta con la experiencia. La atención al alumno es perfecta y las dinámicas de las clases están muy bien”</p>
+                <div class="testimonio-info">
+                    <p class="cliente font-size-texto">Matias</p>
+                    <p class="cargo font-size-texto">Alumno de Agara</p>
+                </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                <img class="testimonio-imagen rounded-circle" src="./recursos/imagenes/Testimonios/ejemplo-usuario3.jpg" alt="Foto de Antonela">
+                <p class="testimonio-texto font-size-texto">“Marian es una excelente profesora y comprometida con sus alumnos, se preocupa porque la práctica de yoga se vaya modificando en función de las limitaciones de cada persona si tiene alguna lesión, y te ayuda en todo lo que pueda”.</p>
+                <div class="testimonio-info">
+                    <p class="cliente font-size-texto">Antonela</p>
+                    <p class="cargo font-size-texto">Alumna de Agara</p>
+                </div>
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden font-size-texto">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden font-size-texto">Siguiente</span>
+            </button>
+        </div>
+    </section>
+<!--Contacto-->
+<section class="contacto seccion-color-contacto" data-aos="fade-up" data-aos="zoom-out-down">
+    <div class="container">
+        <div class="container text-center rectangulo d-flex justify-content-evenly">
+            <div class="row">
+                <div class="col-12 col-md-4 seccion-titulo font-size-titulo">
+                    ¡Hablemos!
+                </div>
+                <div class="col-12 col-md-4 descripcion font-size-texto">
+                    Contactanos para empezar a tomar clases con nosotras y cambia tu estilo de vida
+                </div>
+                <div class="col-12 col-md-4">
+                    <a href="mailto:yaninavaneaquino@gmail.com">
+                        <button class="button-contacto font-size-texto" type="button">
+                            Contacto
+                            <i class="bi bi-envelope icon-contacto tamaño-iconos"></i>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--Footer-->
+    <footer class="seccion-clara d-flex flex-column align-items-center justify-content-center">
+        <img class="footer-logo" src="./recursos/logo/Logo Agara-horizontal.png" alt="logo de agara">
+        <p class="footer-texto text-center font-size-texto">Conecta con tu cuerpo y alma <br> Confia en nuestras maestras</p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+            <!--Instagram-->
+            <a href="https://www.instagram.com/agara.yogui/" target="_blank" rel="noreferrer noopener">
+                <i class="bi bi-instagram tamaño-iconos"></i>
+            </a>
+            <!--Whatsapp-->
+            <a href="https://wa.link/imn7mi" target="_blank" rel="noreferrer noopener">
+                <i class="bi bi-whatsapp tamaño-iconos"></i>
+            </a>
+            <!--Correo-->
+            <a href="mailto:yaninavaneaquino@gmail.com" target="_blank" rel="noreferrer noopener">
+                <i class="bi bi-envelope tamaño-iconos"></i>
+            </a>
+        </div>
+        <div class="derechos-de-autor">Creado por Yanina Aquino (2023) &#169;</div>
+    </footer>
+
+    <!--Bootstrap JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!--Animacion SCROLL -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

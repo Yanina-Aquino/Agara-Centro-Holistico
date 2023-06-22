@@ -1,0 +1,1297 @@
+@charset "UTF-8";
+/*Importacion*/ /*VARIABLES TIPOGRAFIA POPPINS*/
+/*VARIABLES TAMAÑOS TIPOGRAFIA*/
+@font-face {
+  font-family: "poppins-black";
+  src: url(../recursos/fonts/Poppins-Black.ttf);
+}
+@font-face {
+  font-family: "poppins-blackitalic";
+  src: url(../recursos/fonts/Poppins-BlackItalic.ttf);
+}
+@font-face {
+  font-family: "poppins-bold";
+  src: url(../recursos/fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "poppins-bold-italic";
+  src: url(../recursos/fonts/Poppins-BoldItalic.ttf);
+}
+@font-face {
+  font-family: "poppins-extra-bold";
+  src: url(../recursos/fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "poppins-extra-bold-italic";
+  src: url(../recursos/fonts/Poppins-ExtraBoldItalic.ttf);
+}
+@font-face {
+  font-family: "poppins-extra-light";
+  src: url(../recursos/fonts/Poppins-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "poppins-extra-light-italic";
+  src: url(../recursos/fonts/Poppins-ExtraLightItalic.ttf);
+}
+@font-face {
+  font-family: "poppins-italic";
+  src: url(../recursos/fonts/Poppins-Italic.ttf);
+}
+@font-face {
+  font-family: "poppins-light";
+  src: url(../recursos/fonts/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: "poppins-light-italic";
+  src: url(../recursos/fonts/Poppins-LightItalic.ttf);
+}
+@font-face {
+  font-family: "poppins-medium";
+  src: url(../recursos/fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "poppins-regular";
+  src: url(../recursos/fonts/Poppins-Regular.ttf);
+}
+/*Variables colores fondo*/
+/*Barra de navegacion*/
+.navbar {
+  padding: 1rem;
+  background-color: white;
+  font-size: 1.1rem;
+  position: sticky;
+  top: 0px;
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*Footer*/
+footer {
+  min-height: 415px;
+  background: linear-gradient(0deg, rgba(75, 143, 45, 0.5131302521) 0%, rgb(242, 242, 242) 100%);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+.footer-logo {
+  height: 100px;
+  width: 200px;
+  margin: 10px;
+}
+
+.footer-texto {
+  font-size: clamp(12px, 2vw, 18px);
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: "poppins-extra-light";
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid #868181;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+  color: #868181;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: #95C799;
+  border: 2px solid white;
+}
+
+.iconos-redes-sociales a:hover i {
+  color: white;
+}
+
+.derechos-de-autor {
+  font-size: clamp(10px, 2vw, 15px);
+  color: #656060;
+  padding: 20px;
+}
+
+.body-parallax, html {
+  height: 100%;
+  margin: 0;
+  font-family: "poppins-light";
+  line-height: 180%;
+  color: black;
+  text-align: center;
+}
+
+.parallax-clases {
+  background: url("../recursos/imagenes/Clases/parallax.png");
+  min-height: 80%;
+  position: relative;
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.parallax-titulo-clases {
+  position: absolute;
+  color: white;
+  font-size: clamp(25px, 3vw, 150px);
+  top: 50%;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-shadow: 0 0 30px #000;
+  font-family: "poppins-extra-light";
+}
+
+/*Descripcion de las clases*/
+.margen-cardhorizontal-clases {
+  padding: 1rem;
+  border: 2rem;
+}
+
+.image-tipodeclases {
+  padding: 36px;
+  border-radius: 0.5%;
+  box-shadow: 10px black;
+  max-height: 600px;
+}
+
+.image-tipodeclases:hover {
+  filter: opacity(0.5);
+}
+
+.contenedor-clases-img {
+  overflow: hidden;
+}
+
+/*Maestras*/
+/*Titulo*/
+.nuestros-maestras-clases {
+  height: 100px;
+  padding: 10px;
+}
+
+.nuestros-maestras-clases .contenedor-maestras {
+  max-width: 600px;
+  text-align: center;
+}
+
+/*Cards*/
+.maestras {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cards-maestras {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card-image-maestras img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.note {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 4px 8px;
+  border-radius: 0.25rem;
+  background-color: rgb(52, 126, 43);
+  font-weight: 700;
+}
+
+.card-image-maestras {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card-content-textomaestras {
+  position: relative;
+  padding: 16px 12px 32px 24px;
+  margin: 16px 8px 8px 0;
+  max-height: 290px;
+  overflow-y: scroll;
+}
+
+.card-content-textomaestras::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card-content-textomaestras::-webkit-scrollbar-track {
+  box-shadow: 0;
+  border-radius: 0;
+}
+
+.card-content-textomaestras::-webkit-scrollbar-thumb {
+  background: rgb(201, 235, 201);
+  border-radius: 15px;
+}
+
+.card-title-maestras {
+  position: relative;
+  margin: 0 0 24px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.card-title-maestras::after {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(52, 126, 43);
+  content: "";
+}
+
+hr {
+  margin: 24px auto;
+  width: 50px;
+  border-top: 2px solid rgb(201, 235, 201);
+}
+
+.card-text-maestras p {
+  margin: 0 0 24px;
+  line-height: 1.5;
+}
+
+.card-text-maestras p:last-child {
+  margin: 0;
+}
+
+/*Pagina Nosotros*/
+@media (max-width: 767px) {
+  .parallax-clases {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: scroll;
+    max-width: 100%;
+    min-height: 220px;
+  }
+}
+@media (max-width: 767px) {
+  .contenedor-texto-clases {
+    order: 1;
+  }
+  .contenedor-nosotros-img {
+    order: 2;
+  }
+  .cards-maestras {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .cards-maestras {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.body-parallax, html {
+  height: 100%;
+  margin: 0;
+  font-family: "poppins-light";
+  line-height: 180%;
+  color: black;
+  text-align: center;
+}
+
+.parallax-blog {
+  background: url("../recursos/imagenes/Blog/portada-paralax.jpg");
+  min-height: 60%;
+  position: relative;
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.parallax-titulo-blog {
+  position: absolute;
+  color: white;
+  font-size: clamp(25px, 3vw, 150px);
+  top: 50%;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-shadow: 0 0 30px #000;
+  font-family: "poppins-extra-light";
+}
+
+/*Parallax*/
+.parallax {
+  /*Imagen utilizada*/
+  background-image: url("../recursos/imagenes/Blog/portada-paralax.jpg");
+  opacity: 70%;
+  min-height: 500px;
+  /* Parallax efecto */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Titulo Parallax*/
+.centrado-tituloblog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.seccion-titulo-blog {
+  font-family: "poppins-regular";
+  border: 2rem;
+  color: black;
+}
+
+/*Notas Blog*/
+.contenedor-blog {
+  background-color: white;
+  padding: 20px 40px 10px 40px;
+}
+
+.card {
+  padding: 18px;
+  border: none;
+}
+
+.card-body {
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-title {
+  font-family: 2rem;
+}
+
+.card-img-top {
+  max-height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.accordion-button {
+  color: #0d5433;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #0d5433;
+  background-color: rgba(207, 226, 255, 0);
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 #299159;
+}
+
+.accordion {
+  --bs-accordion-btn-focus-border-color: #ffffff;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgb(255, 255, 255);
+}
+
+@media (max-width: 767px) {
+  .parallax-blog {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: scroll;
+    max-width: 100%;
+    min-height: 220px;
+  }
+}
+/*Card horizontal*/
+/*Estilos card*/
+.margen-nosotrosindex {
+  padding: 1rem;
+  border: 2rem;
+}
+
+/*Efectos imagenes*/
+.image-index-nosotros {
+  padding: 36px;
+  border-radius: 0.5%;
+  box-shadow: 10px black;
+  max-height: 600px;
+}
+
+.image-index-nosotros:hover {
+  filter: grayscale(80%);
+}
+
+.contenedor-nosotros-img:hover .image-index-nosotros {
+  transform: scale(1.3);
+}
+
+.contenedor-nosotros-img {
+  overflow: hidden;
+}
+
+/*Carrousel*/
+.tamaño-imagen-carrousel {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
+.tipografia-carrousel {
+  font-size: 2rem;
+  color: rgb(254, 254, 254);
+  font-family: "poppins-regular";
+}
+
+.tipografia-carrousel-texto {
+  font-size: 1.3rem;
+  color: white;
+  font-family: "poppins-light", sans-serif;
+}
+
+/*Frase Index*/
+.color-gris {
+  background-color: #F2F2F2;
+}
+
+.color-gris h2 {
+  font-family: "poppins-extra-light-italic";
+  padding: 2rem;
+  border: 2rem;
+  max-width: 800px;
+  text-align: center;
+}
+
+.frase-index {
+  align-items: center;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+}
+
+/*Nuestros profesores*/
+/*Profesores*/
+.contenedor:hover h2 {
+  transform: scale(1.3);
+  color: green;
+}
+
+.contenedor a {
+  text-decoration: none;
+}
+
+.contenedor h2 {
+  font-family: "poppins-light";
+  color: rgb(52, 126, 43);
+}
+
+.seccion-color-profesores {
+  background-color: rgb(251, 248, 248);
+  color: #353936;
+}
+
+.nuestros-profesores {
+  height: 125px;
+}
+
+.nuestros-profesores .contenedor {
+  max-width: 600px;
+  text-align: center;
+}
+
+.seccion-clara {
+  background-color: white;
+  color: #353936;
+}
+
+.profesores {
+  padding-top: 0.5rem;
+  padding-bottom: 80px;
+  border: 50px;
+}
+
+.profesores .columna {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+  border-radius: 1%;
+}
+
+.profesores .columna:hover {
+  color: green;
+  background-color: #F2F2F2;
+}
+
+.profesores-titulo {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.texto-profesores {
+  text-align: center;
+  font-family: "poppins-light";
+  font-size: 0.8rem;
+}
+
+.profesores-circular {
+  padding: 8px 8px;
+  border-radius: 50%;
+  width: 300px;
+}
+
+/*Redes sociales*/
+.proyectos-recientes {
+  padding: 40px;
+}
+
+.proyectos-recientes img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.proyectos-contenedor {
+  padding-top: 12px;
+  margin-bottom: 40px;
+}
+
+.seccion-descripcion {
+  color: #3dac6d;
+  text-align: center;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.proyecto {
+  position: relative;
+}
+
+.proyecto:hover img {
+  opacity: 0.2;
+}
+
+.proyecto:hover .overlay {
+  opacity: 1;
+}
+
+.overlay .iconos-contenedor {
+  display: flex;
+}
+
+.overlay i {
+  color: black;
+  font-size: 40px;
+  margin: 10px;
+}
+
+.icono-boton {
+  font-size: 12px;
+}
+
+/*Testimonios*/
+/* Testimonios */
+.testimonios {
+  padding: 40px 40px 80px 40px;
+}
+
+.testimonios .carousel {
+  max-width: 800px;
+}
+
+.carousel-item {
+  max-height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonio-imagen {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+  max-width: 70%;
+  text-align: center;
+  font-family: "poppins-light";
+}
+
+.testimonio-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.testimonio-info p {
+  margin-bottom: 0;
+}
+
+.testimonio-footer .cliente {
+  font-family: "poppins-extra-light";
+}
+
+.testimonio-info .cargo {
+  color: #656060;
+  font-family: "poppins-extra-light";
+}
+
+/*Contacto*/
+/*Contacto*/
+.seccion-color-contacto {
+  background-color: #F2F2F2;
+}
+
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.contacto .rectangulo {
+  margin-top: -5rem;
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion {
+  color: #353936;
+}
+
+.contacto .button-contacto {
+  color: green;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid green;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto .button-contacto:hover {
+  background-color: green;
+  color: white;
+  border: white;
+}
+
+.contacto .button-contacto:hover .icon-contacto {
+  color: white;
+}
+
+.icon-contacto {
+  color: green;
+  transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 400px) {
+  .carousel.pointer-event {
+    padding-top: 78px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .d-none {
+    display: none;
+  }
+}
+/*Seccion proyectos*/
+@media screen and (max-width: 479px) {
+  .overlay p {
+    font-size: 18px;
+  }
+  .overlay i {
+    font-size: 40px;
+  }
+}
+/*Seccion testimonios*/
+@media screen and (max-width: 479px) {
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
+  .testimonio-texto {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+/*Seccion Maestras*/
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+@media screen and (max-width: 479px) {
+  .profesores-circular {
+    width: 200px;
+  }
+  .nuestros-profesores {
+    height: 90px;
+  }
+  .profesores {
+    padding-bottom: 0%;
+  }
+  .columna {
+    padding-bottom: 23px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .contenedor-blog {
+    padding: 10px;
+  }
+}
+.body-parallax, html {
+  height: 100%;
+  margin: 0;
+  font-family: "poppins-light";
+  line-height: 180%;
+  color: black;
+  text-align: center;
+}
+
+.parallax-contacto {
+  background: url("../recursos/imagenes/Contactanos/Fondo-contacto.jpg");
+  min-height: 60%;
+  position: relative;
+  opacity: 0.8;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.parallax-titulo-contacto {
+  position: absolute;
+  color: white;
+  font-size: clamp(25px, 3vw, 150px);
+  top: 50%;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-shadow: 0 0 30px #000;
+  font-family: "poppins-extra-light";
+}
+
+/*Titulo contactanos*/
+.contactanos {
+  height: 180px;
+  padding: 10px;
+}
+
+.contactanos .contenedor-titulo-contactanos {
+  max-width: 600px;
+  text-align: center;
+}
+
+.seccion-color-contactanos {
+  background-color: #F2F2F2;
+  color: #353936;
+}
+
+/*Pagina Contactanos*/
+.contacto-contenedor {
+  background-color: white;
+  padding: 1.5rem;
+}
+
+.contenedor-items {
+  max-width: 450px;
+}
+
+/*Botones personalizados ENVIAR-BORRAR*/
+.iconos-formulario button {
+  margin: 10px;
+}
+
+.contenedor-botones {
+  width: 130px;
+}
+
+/*Enviar*/
+.boton-enviar {
+  font-family: "poppins-regular";
+  font-size: 13px;
+  background: rgb(100, 182, 90);
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.boton-enviar span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.2s ease-in-out;
+}
+
+.boton-enviar svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.boton-enviar:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.boton-enviar:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.boton-enviar:hover span {
+  transform: translateX(5em);
+}
+
+.boton-enviar:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+/*Borrar*/
+.boton-borrar {
+  background-color: transparent;
+  position: relative;
+  border: none;
+}
+
+.boton-borrar::after {
+  content: "delete";
+  position: absolute;
+  top: -130%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: rgb(168, 7, 7);
+  padding: 4px 8px;
+  border-radius: 5px;
+  transition: 0.2s linear;
+  transition-delay: 0.2s;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.icon {
+  transform: scale(1.2);
+  transition: 0.2s linear;
+}
+
+.boton-borrar:hover > .icon {
+  transform: scale(1.5);
+}
+
+.boton-borrar:hover > .icon path {
+  fill: rgb(168, 7, 7);
+}
+
+.boton-borrar:hover::after {
+  visibility: visible;
+  opacity: 1;
+  top: -160%;
+}
+
+/*Formulario*/
+.form-control:focus {
+  color: #495057;
+  border-color: #3dac6d;
+  box-shadow: 0 0 0 0.25rem rgba(61, 172, 109, 0.1215686275);
+}
+
+.form-control {
+  border: var(--bs-border-width) solid rgba(116, 172, 140, 0.5294117647);
+}
+
+body {
+  color: #343a40;
+  font-family: "poppins-light";
+}
+
+/*Pagina Nosotros*/
+@media (max-width: 767px) {
+  .parallax-contacto {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: scroll;
+    max-width: 100%;
+    min-height: 220px;
+  }
+}
+.body-parallax, html {
+  height: 100%;
+  margin: 0;
+  font-family: "poppins-light";
+  line-height: 180%;
+  color: black;
+  text-align: center;
+}
+
+.parallax1 {
+  background: url("../recursos/imagenes/Nosotros/Parallax/Parallax-nosotros.jpg");
+  min-height: 70%;
+}
+
+.parallax2 {
+  background: url("../recursos/imagenes/Nosotros/Parallax/parallax-image2.jpg");
+  min-height: 80%;
+}
+
+.parallax3 {
+  background: url("../recursos/imagenes/Nosotros/Parallax/parallax-image3.jpg");
+  min-height: 40%;
+}
+
+.parallax4 {
+  background: url("../recursos/imagenes/Nosotros/Parallax/parallax-image4.jpg");
+  min-height: 50%;
+}
+
+.parallax1, .parallax2, .parallax3, .parallax4 {
+  position: relative;
+  opacity: 0.75;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.heading {
+  position: absolute;
+  color: white;
+  font-size: clamp(25px, 3vw, 150px);
+  top: 50%;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-shadow: 0 0 30px #000;
+  font-family: "poppins-extra-light";
+}
+
+.heading-sm {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  color: #fff;
+  font-size: 250%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 0 0 10px #000;
+  padding: 50px 80px;
+}
+
+.two-col {
+  float: left;
+  width: 50%;
+  padding: 1rem;
+  text-align: left;
+}
+
+.section-nosotros {
+  overflow: auto;
+  padding: 50px 80px;
+}
+
+.gris {
+  overflow: auto;
+  padding: 50px 80px;
+  background-color: #F2F2F2;
+  color: #353936;
+}
+
+/*Titulo claseas Parallax*/
+.centrado-titulo-nosotros {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.seccion-titulo-nosotros {
+  font-family: "poppins-regular";
+  border: 2rem;
+  font-size: 3.5rem;
+  color: black;
+}
+
+/*Parallax*/
+/*Estilo 1 -Texto descriptivo*/
+.seccion-color-1 {
+  background-color: #F2F2F2;
+  color: #353936;
+}
+
+.nosotros {
+  height: 400px;
+  padding: 8px;
+}
+
+.nosotros .contenedor-nosotros {
+  max-width: 800px;
+  text-align: center;
+}
+
+/*Estilo2-Mi trayectoria*/
+.margen-mitrayectoria {
+  padding: 2rem;
+  border: 4rem;
+}
+
+.image-trayectoria {
+  padding: 36px;
+}
+
+.contenedor-trayectoria {
+  background: white;
+  padding: 1rem;
+  height: 500px;
+}
+
+/*Pagina Nosotros*/
+@media screen and (max-width: 768px) {
+  .parallax-nosotros {
+    background-attachment: fixed;
+    min-height: 235px;
+  }
+  .centrado-titulo-nosotros {
+    top: 30%;
+  }
+  .seccion-titulo-nosotros {
+    color: black;
+  }
+}
+@media (max-width: 768px) {
+  .headding {
+    font-size: 250%;
+  }
+  .headding-sm {
+    font-size: 180%;
+  }
+  .two-col {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .parallax1, .parallax2, .parallax3, .parallax4 {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: scroll;
+    max-width: 100%;
+  }
+  .parallax1 {
+    min-height: 290px;
+  }
+  .parallax2, .parallax3, .parallax4 {
+    min-height: 220px;
+  }
+}
+/*Adaptable (Responsivo)*/
+.navbar {
+  position: fixed;
+}
+
+/*Estilos generales*/
+.font-size-titulo-xl {
+  font-size: clamp(30px, 2vw, 45px);
+}
+
+.font-size-titulo-g {
+  font-size: clamp(20px, 2vw, 30px);
+}
+
+.font-size-titulo {
+  font-size: clamp(18px, 2vw, 25px);
+}
+
+.font-size-texto {
+  font-size: clamp(12px, 2vw, 18px);
+}
+
+.tamaño-iconos {
+  font-size: clamp(15px, 2vw, 18px);
+}
+
+.titulo {
+  color: rgb(52, 126, 43);
+}
+
+.seccion-texto {
+  font-family: "poppins-light";
+  text-align: center;
+  max-width: 900px;
+}
+
+.seccion-titulo {
+  font-family: "poppins-regular";
+  border: 2rem;
+  padding: 1rem;
+  color: rgb(52, 126, 43);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.texto-blanco {
+  color: white;
+}
+
+/*Boton con estilo*/
+.btn {
+  position: relative;
+  font-size: 0.8rem;
+  font-family: "poppins-light";
+  text-decoration: none;
+  padding: 1rem 2rem;
+  display: inline-block;
+  text-align: center;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-weight: 500;
+  color: black;
+  background-color: rgb(245, 243, 243);
+  font-size: clamp(12px, 2vw, 18px);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: rgb(76, 130, 57);
+  color: white;
+  font-size: 0.9rem;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(112, 82, 82, 0.2);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.active {
+  font-weight: 600;
+}
+
+/*Para que no aparezca el logo cuando se achica -- Responsive*/
+@media screen and (max-width: 479px) {
+  .navbar-brand {
+    display: none;
+  }
+  .navbar {
+    position: fixed;
+  }
+}/*# sourceMappingURL=style.css.map */

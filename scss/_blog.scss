@@ -1,0 +1,111 @@
+//Parallax 2.0
+.body-parallax, html{
+    height: 100%;
+    margin: 0;
+    font-family: "poppins-light";
+    line-height: 180%;
+    color: black;
+    text-align: center;
+}
+
+.parallax-blog {
+    background: url("../recursos/imagenes/Blog/portada-paralax.jpg");
+    min-height: 60%;
+
+    position: relative;
+    opacity: 0.80;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed ;
+}
+
+.parallax-titulo-blog{
+    position: absolute;
+    color: white;
+    font-size: $titulo-parallax-size;
+    top: 50%;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    text-shadow: 0 0 30px #000 ;
+    font-family: $extra-light;
+}
+
+
+/*Parallax*/
+.parallax {
+/*Imagen utilizada*/
+background-image: url("../recursos/imagenes/Blog/portada-paralax.jpg");
+opacity: 70%;
+
+
+min-height: 500px; 
+
+/* Parallax efecto */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+/*Titulo Parallax*/
+.centrado-tituloblog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.seccion-titulo-blog{
+    font-family: "poppins-regular";
+    border: 2rem;
+    color: black;
+}
+
+/*Notas Blog*/
+.contenedor-blog{
+    background-color: white ;
+    padding: 20px 40px 10px 40px;
+}
+.card{
+    padding: 18px;
+    border: none;
+}
+.card-body{
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-title{
+    font-family: $medium;
+}
+
+.card-img-top{
+    max-height: 350px;
+    object-fit: cover;
+    width: 100%;
+
+}
+
+.accordion-button {
+    color: #0d5433;
+}
+.accordion-button:not(.collapsed) {
+    color: #0d5433;
+    background-color: #cfe2ff00;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 #299159;
+}
+.accordion {
+    --bs-accordion-btn-focus-border-color: #ffffff;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgb(255, 255, 255);
+}
+
+@media (max-width: 767px) {
+    .parallax-blog{
+        background-repeat:no-repeat;
+        background-size:100% 100%;
+        background-position:center;
+        background-attachment: scroll;
+        max-width: 100%;
+        min-height: 220px;
+    }
+}
